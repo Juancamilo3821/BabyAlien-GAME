@@ -1,6 +1,6 @@
 # 👾 Baby Alien GAME
 
-Bienvenido a **Baby Alien GAME**, un juego de disparos en 2D desarrollado en **Unity**. Controla a un alienígena bebé y enfréntate a desafíos espaciales mientras disparas proyectiles para defenderte. 🚀✨
+Bienvenido a **Baby Alien GAME**, un juego de disparos inspirado en el famoso estilo Shot em up en 2D desarrollado en **Unity**. Controla a un alienígena bebé y enfréntate a desafíos espaciales mientras disparas proyectiles para defenderte. 🚀✨
 
 ---
 
