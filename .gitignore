@@ -1,0 +1,47 @@
+# 🚀 Ignorar archivos innecesarios en Unity
+
+# Carpetas generadas automáticamente
+Library/
+Temp/
+Logs/
+Obj/
+Build/
+Builds/
+UserSettings/
+MemoryCaptures/
+
+# Archivos de caché y configuraciones de usuario
+*.csproj
+*.sln
+*.unityproj
+*.suo
+*.tmp
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Archivos de compilación de Unity
+*.apk
+*.aab
+*.unitypackage
+*.exe
+*.dll
+
+# Configuraciones locales de Unity y Visual Studio
+.vscode/
+.idea/
+MonoDevelop/
+*.userprefs
+*.uo
+*.pidb.meta
+
+# Archivos de log y depuración
+*.log
+*.stacktrace
+
+# Ignorar metadatos innecesarios
+.DS_Store
+Thumbs.db

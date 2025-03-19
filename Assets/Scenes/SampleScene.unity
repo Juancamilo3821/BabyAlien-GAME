@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 240928203}
   - component: {fileID: 240928202}
   - component: {fileID: 240928206}
+  - component: {fileID: 240928207}
   m_Layer: 0
   m_Name: BabyAlien
   m_TagString: BabyAlien
@@ -279,7 +280,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 960204598}
+  - {fileID: 689479138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &240928206
@@ -295,6 +296,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadNave: 5
+--- !u!114 &240928207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240928201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fcbecccfc5574944ba5941ce69d7399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6449664578824678907, guid: 898ffa0f675e3d24ba92174b675de7de, type: 3}
+  firePoint: {fileID: 689479138}
+  bulletSpeed: 10
 --- !u!1 &427836560
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BabyAlien: {fileID: 240928205}
   smoothSpeed: 1
---- !u!1 &960204597
+--- !u!1 &689479137
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -488,45 +504,76 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 960204598}
-  - component: {fileID: 960204599}
+  - component: {fileID: 689479138}
   m_Layer: 0
-  m_Name: Disparador
+  m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &960204598
+--- !u!4 &689479138
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960204597}
+  m_GameObject: {fileID: 689479137}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.3333333, y: 3.3333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240928205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &960204599
+--- !u!1 &760856427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760856429}
+  - component: {fileID: 760856428}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &760856428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960204597}
+  m_GameObject: {fileID: 760856427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b431b36e58f1142b189558c6d03038, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c3bf74efb6393847aa62623cecbd85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disparo: {fileID: 5370253272398031132, guid: 7e89a05da24e2ca43ba512f719bbdffc, type: 3}
-  cantidadDisparos: 10
-  listaDisparos: []
+  tilePrefab: {fileID: 5997076122769387123, guid: 0582786aa80cf194aab7145ca1a97f19, type: 3}
+  player: {fileID: 240928205}
+  maxTilesOnScreen: 10
+--- !u!4 &760856429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760856427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6071818, y: 4.055533, z: -0.118059695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393655712
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +620,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundPrefab: {fileID: 2573913735842700220, guid: d74c9fbc4876d4b43bfce36a5b777ce6, type: 3}
+  activeBackgrounds: []
+  backgroundHeight: 0
   BabyAlien: {fileID: 0}
+  maxBackgrounds: 5
+  spawnPositionY: 0
 --- !u!61 &1393655715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -626,3 +677,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 240928205}
   - {fileID: 1393655713}
+  - {fileID: 760856429}
